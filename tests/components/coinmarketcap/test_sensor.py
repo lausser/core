@@ -40,6 +40,6 @@ class TestCoinMarketCapSensor(unittest.TestCase):
         state = self.hass.states.get("sensor.ethereum")
         assert state is not None
 
-        assert state.state == "493.455"
+        assert state.state == "120.737"
         assert state.attributes.get("symbol") == "ETH"
         assert state.attributes.get("unit_of_measurement") == "EUR"
